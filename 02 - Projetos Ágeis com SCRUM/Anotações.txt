@@ -1,0 +1,95 @@
+Gestão de Projetos Tradicional (waterfall) X Ágil
+
+Em prjeots tradicionais, você corre o risoc de descobrir que estava errado depois de meses. Com o SCRUM, você descobre que estava errado em no máximo 30 dias.
+
+Ágil != Rápido
+
+O que é ser Ágil?
+-Rapidez (mudança) e desembaraço;
+-fazer as coisas complexas de forma simples;
+-equipe comprometida com os objetivos;
+-maior valor para o cliente
+
+**[Ter capacidade de responder rapidamente a mudanças]**
+
+Scrum é um dos frameworks de gerenciamento de projeots ágeis;
+Projetos usando equipes pequenas e multidisciplinares produzem os melhores resultados.
+
+-conversar mais e escrever menos;
+-demonstrar o software constantemente aos usuários e obter feedbacks constantes;
+-requisitos mudam ao longo do tempo;
+-aprender progressivamente com o uso do software.
+
+*Razões para adotar o SCRUM:*
+
+- desenvolvido e entregue em partes menores (2 a 4 semanas) com constante feedback dos usuários;
+-melhor gerenciamento de riscos;
+-comprometimento, motivação e transparência com a equipe (daily meeting);
+-maior valor para o negócio
+-usuários envolvidos durante todo o ciclo;
+-aplicação das Lições Aprendidas. (melhoria contínua)
+
+*Papéis e Responsabilidades*
+
+Product Owner (PO)
+-representa a áre de negócios
+-define as funcionalidades do software;
+-prioriza as funcionalidades de acordo com o valor do negócio;
+-garante o time de desenvolvimento entenda os itens do backlog no nível necessário
+
+Scrum Master (SM)
+-garate o uso correto do scrum;
+-não é gerente de projetos;
+-age como facilitador;
+-auxilia o PO no planejamento e estimativas do backlog;
+-auxilia a equipe a remover impedimentos;
+-treina o time em autogerenciamento e interdisciplinaridade
+
+Time de Desenvolvimento (DEV)
+- possui habilidades suficientes para desenvolver, testar, criar e desenhar, ou seja, tudo que for necessário para entregar o software funcionando.
+
+*Cerimônias do SCRUM*
+
+Time Box - Tempo máximo para fazer uma cerimônia ou Sprint
+
+->Cerimônias:<-
+Sprint - evento principal do SCRUM. Duração de 30 dias ou menos.
+-planejamento da sprint: participa o PO, DEV e SM. Time Box de 8 horas. Nas primerias 4 hrs tem como objetivo "o que fazer?". E o restante é com o DEV e define "como fazer".
+-reuniões diárias: Time Box: 15 min. O que fez no dia anterior, o que está programado para o dia e se tem algum impedimento. Reunião em pé, mesmo horário e local, todos os dias. Conhecida como Stand Up Meeting.
+-revisão da sprint: no último dia da sprint, Time DEV apresenta para o PO o trabalho feito. Time-Box para uma sprint de 30 dias é de 4hrs. 
+-retrospectiva da sprint: Reunião da equipe para Lições Aprendidas. Basicamente o Time DEV conta os erros que a equipe teve com total transparência. Time-Box 3hrs (sprint 30 dias)
+
+Release Planning
+Liberação ou lançamento de software. Cade vez que um produto de software é criado ou modificado, o fabricante e seus desenvolvedores decidem sobre como distribuir ou o novo produto ou a modificação às pessoa que o utilizam.
+Existem 2 tipos:
+-Release Planning de Múltiplas Squads;
+-Release Planning de Projeto.
+
+*Product Backlog*
+Composto por Épicos e Estórias
+-Épicos = Incremento sem muito detalhamento, ajuda a te direcionar dos caminhos que deve seguir.
+-Estória = Detalhamento dos épicos, um épico normalmento se divide em várias estórias, onde ficam descritos o que deve acontecer e suas regras de negócio.
+
+Escrevendo uma Estória:
+-Nome da estória
+-descrição da estória (eu,como,quero,quando)
+-regras de negócio ( separar regras de Front-End de Regras de Back-end)
+-Tela (link ou imagem das telas a serem desenvolvidas)
+-KPI (objetivos/valor que a estória precisa atingir)
+-Tagueamento (como a etória será "tagueada" para poder mensurar os KPI)
+-Critérios de Aceite (qual o passo a passo de todos os Caminhos Felizes possíveis a estoria deve cumprir para que ela seja considerada aceita)
+
+*Gestão de Riscos*
+Positivos = muito ignorado nos projetos, porém um dos fatores de maiores ganhos no desenvolvimentos de sistemas.
+Negativos = itens que podem afetar o prazo, custo ou escopo de um projeto de maneira que pode acabar inviabilizando-o.
+
+*Transformação Digital*
+Um processo no qual as empresas fazem uso da tenologia para melhorar o desempenho, aumentar o alcance e garantid resultado melhores. É uma mudança estrutural nas organizações dando um papel essencial para a tecnologia. Trata-se muito mais de pessoas do que tecnologia em si. Mostrar para as pessoas como a tecnologia pode potencializar os resultados.
+
+*Conceitos*
+Épico são quebrados em Estórias que são quebrados em Tarefas.
+
+*Critério de Aceite*
+É uma lista de critérios que precisam ser alcançados para que a User Story atenda os requisitos do usuário e seja aceita pelo Product Owner.
+Os critérios de aceitação tê o objetivo de: definir limites para as user stories. Ajuda o PO a detalhar em alto nível o que é necessário para entregar valor ao cliente.
+

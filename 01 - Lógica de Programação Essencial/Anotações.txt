@@ -1,0 +1,59 @@
+Fluxograma - Representação esquemática de um processo. Uma documentação dos passos necessários para execução de um processo qualquer.
+
+Variáveis - um objeto (uma posição, frequentemente localizada na memória) capaz de reter e representar um valor ou expressão.
+  Tipo de variáveis: Numéricas, caracteres, alfanuméricas ou lógicas (verdadeiro ou falso)
+
+Declaração de constantes:
+Ex.:
+Início
+DECLARA pi=3,14 (constante)
+DECLARA raio: número (variável)
+FIM
+
+Expressões aritméticas
+Utilizam operadores aritméticos e funções aritméticas envolvendo constantes e variáveis
+Ex.:
+50+50
+total+50
+
+Operadores:
+Soma +
+Subtração -
+Multiplação *
+Divisão /
+Pontenciação ^
+Porcentagem %
+
+Expressões Literais
+Expressões com constantes e/ou variáveis que tem como resultado valores literais. Usamos expressões literais na atribuição de valor para uma variável ou constante.
+Ex.:
+nome="José da Silva"
+media=(nota1+nota2+nota3+nota4)/4
+
+Operadores relacionais
+Expressões compostas por outras expressões ou variáveis numéricas com operadores relacionais. Essas expressões retornam valores lógicos (verdadeiro/falso)
+> maior que
+>= maior ou igual
+< menor
+<= menor ou igual
+== igualdade
+!= diferente
+
+Tomadas de decisão
+Quando escrevemos programas, geralmente occore a necessidade de decidir o que fazer dependendo de alguma condição encontrada durante a execução
+
+Concatenação
+É um termo usado em computação para designar a operação de unir o conteúdo de duas strings (strings é uma sequência de caracteres), ou seja, o agrupamento de duas ou mais células que, incluindo fórmulas, textos ou outras informações contidas no seu interior, dá origem a um único resultado.
+
+Estrutura de Repetição
+Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com ua condição ou contador
+
+Linguagens de programação e o Portugol
+Desvios Condicionais (estruturas de decisão)
+-Se -> é utilizada a palavra reservada se, a condição a ser testada entre parenteses e as instruções que devem ser executadas entre chaves caso o sevio seja verdadeiro. se e senão
+
+-Caso-> Este comando é similar aos anteriores e reduz a complexidade na escolha de diversas opções. Apesar de suas similaridades com o se, ele possui algumas diferenças. Neste comando não é possível o uso de operadores lógicos, ele apenas trabalha com valores definidos
+
+Matrizes e Vetores
+Uma matriz é uma coleção de variáveis de mesmo tipo, acessíveis com um único nome e armazenados contiguamente na memória. A individualização de cada variável de um vetor é feita através do uso de índices. Os Vetores são matrizes de uma só dimensão
+

@@ -1,0 +1,47 @@
+-Controle de Versão;
+-Armazenamento em nuvem;
+-Trabalho em equipe;
+-Melhorar seu código;
+-Reconhecimento
+
+*Navegação básica no terminal & instalação*
+Windows:
+-cd
+-dir
+-mkdir
+-del / rmdir
+Unix: (linux e mac)
+-cd
+-ls
+-mkdir
+-rm -rf
+
+*Git por baixo dos panos*
+
+SHA1:
+A sigla SHA significa Secure Hash Algorithm, é um conjunto de funções hash criptográficas projetadas pela NSA (Agência de Segurança Nacional dos EUA).
+A encriptação gera um conjunto de caracteres identificador de 40 dígitos (a cada mudança feita no algorítmo)
+
+É uma forma curta de representar um arquivo. Ex.:
+
+1 echo "ola mundo" | openssl sha1
+2 > (stdin)= f9fc856e559b950175f2b7cd7dad61facbe58e7b
+
+Objetos Fundamentais:
+BLOBS
+TREES
+COMMITS
+
+*Chaves SSH e Token*
+
+*Primeiros comandos do Git*
+-git init (cria um repositório git dentro de uma pasta no pc)
+-git add
+-git commit
+
+Configuração de autor do Git
+git config --global user.email "diogordones@gmail.com"
+git config --global user.name diogordones
+
+
+
