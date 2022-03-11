@@ -1,5 +1,8 @@
 **Tipos de dados e variáveis**
 
+TODA DIV É REPRESENTADA POR #
+TODA CLASSE É REPRESENTADA POR .
+
 Identificadores de variáveis
 -Podem começar com letra, $ ou _
 -Não podem começar com número
@@ -63,7 +66,132 @@ n1.toFixed(2).replace('.' , ',') retorna 1545,50
 
 n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //retorna R$ 1.545,50
 
-AULA 07
+**Operadores do JS** (existem mais. Mas focaremos nesse)
+-aritméticos
+-atribuição
+-relacionais
+-lógicos
+-ternários
+
+*Aritméticos: (+ - * / % **)
+5 % 2 resto da divisão de 5 por 2
+
+Ordem de Precedência (sequência de cálculos)
+-> () -> ** -> * / % -> + -
+
+*Auto-atribuições
+var n = 3
+n = n + 4
+n = 7 (n que era 3 passou a ser 7)
+Simplificando
+var n = 3
+n += 4 (só serve se a variável receber ela mesma junto a operação)
+
+*Incremento
+var n = 10
+n++ (adiciona 1 unidade ao n)
+10 <- recebe 10, porém se pedir n mostra 11 (questão de sequencia)
+
+var n = 10
+++n (mesma coisa, mas muda a sequencia)
+11 -> recebe 11 direto
+
+*Relacionais
+>, <, >=, <=, ==, !=
+
+//Exemplos
+preço >= 200.50
+idade < 18
+curso == "JavaScript"
+n1 != n2
+
+*Identidade
+5 == 5 (true)
+5 == "5" (true) O JS analisa se tem o mesmo valor que o outro. A mesma grandeza
+Então no caso, para identificar para saber se tem o MESMO VALOR 	e o MESMO TIPO, utilizamos === (idêntico)
+5 === "5" (false)
+5 !== "5" (true)
+
+*Lógicos
+Ordem de Precedência:
+-> ! -> && -> ||
+
+! - negação
+Tratado como operador unário 
+//Exemplo 
+!true -> false
+!false -> true
+
+&& - conjunção (e)
+Operador binário
+//Exemplo
+true && true -> true
+true && false -> false
+false && true -> false
+false && false -> false
+Ou seja, só satisfaz se as duas forem verdadeiras
+
+|| - disjunção (ou)
+Também é binário mas satisfaz com apenas 1 verdadeiro
+//Exemplo
+true || true -> true
+true || false -> true
+false || true -> true
+false || false -> false
+
+//Exemplos
+idade >= 15 && idade <=17 //a idade está entre 15 e 17?
+estado == 'RJ' || estado =='SP' //o estado é RJ ou SP?
+salário > 1500 && sexo != 'M' // o salário é mairo que 1500 e não é homem?
+
+Ordem de Precedência:
+-> aritméticos -> relacionais -> lógicos
+
+*Ternário
+É representado por ?: na mesma expressão
+//Exemplo
+teste ? true : false
+média >= 7.0?"Aprovado":"Reprovado"
+
+//Exemplo2
+var idade = 19
+var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+r
+'MAIOR'
 
 
+**DOM**
+Documento Object Model
+Só funciona JS dentro do navegador
 
+*Árvore DOM
+-window (raiz) - Tudo dentro do JS está dentro do objeto chamado window
+-Dentro do window temos: location, document e history (existem outros mas esses são os principais.
+-Dentro do Document temos o HTML
+-Dentro do HTML temos head e body
+
+Para selecionar elementos dentro da árvore pode ser:
+-por Marca (tag)
+-por ID
+-por Nome
+-por Classe
+-por Seletor (CSS, é o mais recente)
+
+*Por Marca
+getElementsByTagName() (consegue selecionar mais de um elemento)
+//Exemplo
+var p1 = window.documento.getElementsByTagName('p')[0]
+Ele puxaria todos os parágrafos, porém o [0] representa que quero somente o primeiro
+
+*Por ID
+getElementById()
+
+*Por Nome
+getElementsByName()
+
+*Por Classe
+getElementsByClassName()
+
+*Por Seletor
+querySelector()
+querySelectorAll()
