@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    </head>
+    <body>
+    <h1>Sistema de Nacionalidade</h1>
+    País de Origem: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="verificar()" onmouseenter="entrar()" onmouseout="sair()" id="botao">
+
+    <div id="res">
+
+    </div>
+    <script>
+            function entrar() {
+            var bot = document.getElementById('botao') 
+            bot.style.color = 'green'
+            bot.style.backgroundColor = 'yellow'    
+            }
+
+            function sair() {
+                var bot = document.getElementById('botao') 
+                bot.font = 'normal'
+                bot.style.color = 'black'
+                bot.style.backgroundColor = 'gray'
+            }
+
+            function verificar() {
+            var txtn = document.getElementById('txtnac')
+            var res = document.getElementById('res')
+            var pais = txtn.value          
+
+            res.innerHTML = `<p>Você nasceu em ${pais}</p>`
+                if (pais == "Brasil") {
+                    res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+                } else {
+                    res.innerHTML += `<p>Você é <strong>Estrangeiro</estrangeiro></p>`
+                }
+        }
+    </script>
+</body>
+</html>

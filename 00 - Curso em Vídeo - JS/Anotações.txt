@@ -195,3 +195,125 @@ getElementsByClassName()
 *Por Seletor
 querySelector()
 querySelectorAll()
+
+**Eventos DOM**
+
+-mouseenter (entrar numa div)
+-mousemove (mover por dentro da div. dispara várias vezes este evento. Enquanto estiver movimentando o mouse)
+-mousedown (clicar e segurar)
+-mouseup (soltar o clique)
+-click (clicar e soltar)
+-mouseout (sair da div)
+
+*Funções
+para executar algumas linhas de códigos conforme interação, você deve colocar essas linhas dentro de um bloco. Esse bloco precisa ser nomeado por function + nome da ação e parâmetros. Ex.: 
+
+function ação(param){
+
+}
+
+area.addEventListener('click', clicar)
+area.addEventListener('entrar', entrar)
+area.addEventListener('sair', sair)
+
+Com esses códigos acima, eu tiro a poluição do HTML e deixo o JS tratar as ações desejadas
+
+Ex006 - Aula 10
+
+Ex007 - Aula 10
+
+**Condições em JS**
+
+if (condição) {
+
+}
+else {
+
+}
+
+2 blocos. O primeiro para True e o segundo para False
+
+//Tipos de Condição (vide exercícios Aula 11)
+
+-Simples
+if(condição){
+TRUE
+}
+
+-Composta
+if(condição){
+true
+} else{
+false
+}
+
+-Aninhadas (coloca condição dentro da condição)
+else if
+
+//Exemplo - (Aula 12 - Ex011)
+
+if(cond1) {
+bloco1
+}else {
+if (cond2) {
+bloco2
+} else {
+bloco3
+}
+}
+
+-Condição Múltipla
+
+switch(expressão) {
+case valor1:
+bloco1
+breake 
+case valor2:
+bloco2
+break
+case valor3:
+bloco3
+break
+default:
+bloco padrão
+break
+
+O break é obrigatório. Ele para de executar os comandos quando atinge a variável desejável
+O switch só funciona com números inteiros e 'strings'
+
+**Repetições**
+funciton comerPizza() {
+  while(temFatia()) {
+	 comerFatia()
+}
+
+}
+
+*Estrutura de repetição com variável de controle*
+for (inicio ; teste ; incr) {
+bloco
+}
+
+var c=1
+while (c<=10) {
+bloco
+c++
+}
+
+Agora utilizando 'for'
+
+for (var c=1;c<=10;c++) {
+bloco
+}
+
+**Variáveis Compostar**
+-Variáveis simples só conseguem armazenar um valor por vez
+-Compostas devem ser capazes de armazenar vários valores em uma mesma estrutura
+vaga a = [ ,  ,  ,]
+//Um array, vetor, ou variável composta é uma variável que tem vários elementos. Cada elemento é composto por seu valor e por uma chave de identificação.
+
+let num = [5, 8, 2, 9, 3]
+num[5] = 12 //adiciona mais um índice na variável
+num.push(7) //o JS joga para a última posição o valor entre ()
+num.length //comprimento da variável
+num.sort() //Organiza os elementos por ordem crescente
