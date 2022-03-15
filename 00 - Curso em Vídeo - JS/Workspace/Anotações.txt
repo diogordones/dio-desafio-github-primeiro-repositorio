@@ -1,0 +1,342 @@
+**Tipos de dados e variáveis**
+
+TODA DIV É REPRESENTADA POR #
+TODA CLASSE É REPRESENTADA POR .
+
+Identificadores de variáveis
+-Podem começar com letra, $ ou _
+-Não podem começar com número
+-é possível usar letras + números
+-é possível usar acentos e símbolos
+-não podem conter espaços
+-não podem ser palavras reservadas
+
+Mesmo assim:
+-maiúsculas e minúsculas fazem diferença
+-tenta utilizar nomes coerentes para as variáveis
+
+Tipos de dados primitivos:
+inteiros e reais: number
+true e false: boolean
+Caracteres no geral: string
+
+**Manipulação de Dados**
+
+Number.parseInt(n): tranforma a string em número inteiro
+Number.parseFloat(n): transfoma em número real
+Number(n): deixo o JS entender e decidir que tipo de número é
+
+De número para string:
+String(n)
+ou
+n.toString()
+
+**Formatando Strings**
+var s= 'JavaScript'
+'Eu estou aprendendo s' //não faz interpolação
+'Eu estou aprendendo' + s //usa concatenação
+`Eu estou aprendendo ${s}` //usa tempalte string
+
+template string - ${}
+
+Ex.: 
+var nome = Diogo
+var idade = 34
+car nota = 8.5
+
+-Concatenando normalmente ficaria:
+"O aluno " + nome + " com" + idade + " anos tirou nota" + nota
+
+-Com template sting: (SEMPRE ENTRE CRASE `)
+`O aluno ${nome} com ${idade} anos tirou nota ${nota}`
+
+Os dois retornam:
+O aluno Diogo com 34 anos tirou nota 8.5
+
+var s = 'JavaScript'
+s.lenght //quantos caracteres a string tem
+s.toUpperCase() //tudo para MAIÚSCULAS
+s.toLowerCase() // tudo para minúsculas
+
+**Formatando Números**
+var n1 = 1545.5
+n1 retorna 1545.5
+n1.toFixed(2) retorna 1545.50
+n1.toFixed(2).replace('.' , ',') retorna 1545,50
+
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //retorna R$ 1.545,50
+
+**Operadores do JS** (existem mais. Mas focaremos nesse)
+-aritméticos
+-atribuição
+-relacionais
+-lógicos
+-ternários
+
+*Aritméticos: (+ - * / % **)
+5 % 2 resto da divisão de 5 por 2
+
+Ordem de Precedência (sequência de cálculos)
+-> () -> ** -> * / % -> + -
+
+*Auto-atribuições
+var n = 3
+n = n + 4
+n = 7 (n que era 3 passou a ser 7)
+Simplificando
+var n = 3
+n += 4 (só serve se a variável receber ela mesma junto a operação)
+
+*Incremento
+var n = 10
+n++ (adiciona 1 unidade ao n)
+10 <- recebe 10, porém se pedir n mostra 11 (questão de sequencia)
+
+var n = 10
+++n (mesma coisa, mas muda a sequencia)
+11 -> recebe 11 direto
+
+*Relacionais
+>, <, >=, <=, ==, !=
+
+//Exemplos
+preço >= 200.50
+idade < 18
+curso == "JavaScript"
+n1 != n2
+
+*Identidade
+5 == 5 (true)
+5 == "5" (true) O JS analisa se tem o mesmo valor que o outro. A mesma grandeza
+Então no caso, para identificar para saber se tem o MESMO VALOR 	e o MESMO TIPO, utilizamos === (idêntico)
+5 === "5" (false)
+5 !== "5" (true)
+
+*Lógicos
+Ordem de Precedência:
+-> ! -> && -> ||
+
+! - negação
+Tratado como operador unário 
+//Exemplo 
+!true -> false
+!false -> true
+
+&& - conjunção (e)
+Operador binário
+//Exemplo
+true && true -> true
+true && false -> false
+false && true -> false
+false && false -> false
+Ou seja, só satisfaz se as duas forem verdadeiras
+
+|| - disjunção (ou)
+Também é binário mas satisfaz com apenas 1 verdadeiro
+//Exemplo
+true || true -> true
+true || false -> true
+false || true -> true
+false || false -> false
+
+//Exemplos
+idade >= 15 && idade <=17 //a idade está entre 15 e 17?
+estado == 'RJ' || estado =='SP' //o estado é RJ ou SP?
+salário > 1500 && sexo != 'M' // o salário é mairo que 1500 e não é homem?
+
+Ordem de Precedência:
+-> aritméticos -> relacionais -> lógicos
+
+*Ternário
+É representado por ?: na mesma expressão
+//Exemplo
+teste ? true : false
+média >= 7.0?"Aprovado":"Reprovado"
+
+//Exemplo2
+var idade = 19
+var r = idade >= 18 ? 'MAIOR' : 'MENOR'
+r
+'MAIOR'
+
+
+**DOM**
+Documento Object Model
+Só funciona JS dentro do navegador
+
+*Árvore DOM
+-window (raiz) - Tudo dentro do JS está dentro do objeto chamado window
+-Dentro do window temos: location, document e history (existem outros mas esses são os principais.
+-Dentro do Document temos o HTML
+-Dentro do HTML temos head e body
+
+Para selecionar elementos dentro da árvore pode ser:
+-por Marca (tag)
+-por ID
+-por Nome
+-por Classe
+-por Seletor (CSS, é o mais recente)
+
+*Por Marca
+getElementsByTagName() (consegue selecionar mais de um elemento)
+//Exemplo
+var p1 = window.documento.getElementsByTagName('p')[0]
+Ele puxaria todos os parágrafos, porém o [0] representa que quero somente o primeiro
+
+*Por ID
+getElementById()
+
+*Por Nome
+getElementsByName()
+
+*Por Classe
+getElementsByClassName()
+
+*Por Seletor
+querySelector()
+querySelectorAll()
+
+**Eventos DOM**
+
+-mouseenter (entrar numa div)
+-mousemove (mover por dentro da div. dispara várias vezes este evento. Enquanto estiver movimentando o mouse)
+-mousedown (clicar e segurar)
+-mouseup (soltar o clique)
+-click (clicar e soltar)
+-mouseout (sair da div)
+
+*Funções
+para executar algumas linhas de códigos conforme interação, você deve colocar essas linhas dentro de um bloco. Esse bloco precisa ser nomeado por function + nome da ação e parâmetros. Ex.: 
+
+function ação(param){
+
+}
+
+area.addEventListener('click', clicar)
+area.addEventListener('entrar', entrar)
+area.addEventListener('sair', sair)
+
+Com esses códigos acima, eu tiro a poluição do HTML e deixo o JS tratar as ações desejadas
+
+Ex006 - Aula 10
+
+Ex007 - Aula 10
+
+**Condições em JS**
+
+if (condição) {
+
+}
+else {
+
+}
+
+2 blocos. O primeiro para True e o segundo para False
+
+//Tipos de Condição (vide exercícios Aula 11)
+
+-Simples
+if(condição){
+TRUE
+}
+
+-Composta
+if(condição){
+true
+} else{
+false
+}
+
+-Aninhadas (coloca condição dentro da condição)
+else if
+
+//Exemplo - (Aula 12 - Ex011)
+
+if(cond1) {
+bloco1
+}else {
+if (cond2) {
+bloco2
+} else {
+bloco3
+}
+}
+
+-Condição Múltipla
+
+switch(expressão) {
+case valor1:
+bloco1
+breake 
+case valor2:
+bloco2
+break
+case valor3:
+bloco3
+break
+default:
+bloco padrão
+break
+
+O break é obrigatório. Ele para de executar os comandos quando atinge a variável desejável
+O switch só funciona com números inteiros e 'strings'
+
+**Repetições**
+funciton comerPizza() {
+  while(temFatia()) {
+	 comerFatia()
+}
+
+}
+
+*Estrutura de repetição com variável de controle*
+for (inicio ; teste ; incr) {
+bloco
+}
+
+var c=1
+while (c<=10) {
+bloco
+c++
+}
+
+Agora utilizando 'for'
+
+for (var c=1;c<=10;c++) {
+bloco
+}
+
+
+**Variáveis Compostar**
+-Variáveis simples só conseguem armazenar um valor por vez
+-Compostas devem ser capazes de armazenar vários valores em uma mesma estrutura
+vaga a = [ ,  ,  ,]
+//Um array, vetor, ou variável composta é uma variável que tem vários elementos. Cada elemento é composto por seu valor e por uma chave de identificação.
+
+let num = [5, 8, 2, 9, 3]
+num[5] = 12 //adiciona mais um índice na variável
+num.push(7) //o JS joga para a última posição o valor entre ()
+num.length //comprimento da variável
+num.sort() //Organiza os elementos por ordem crescente
+
+
+**Funções**
+São AÇÕES executadas assim que chão CHAMADAS ou em decorrência de algum EVENTO.
+Uma função pode receber parâmetros e retornar um resultado.
+
+**Introdução a Objetos**
+Declarar objetos pro chaves {     ,      ,      ,      }
+
+let amigo = {nome:'José', sexo:'M', peso:85.4, engordar(p){}}
+
+Ao contrário do array que identifica seus elementos por número, aqui, conseguimos dar nomes aos elemento e ainda criar uma função dentro do objeto
+
+
+
+
+
+
+
+
+
+
